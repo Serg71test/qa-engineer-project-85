@@ -137,7 +137,8 @@
   requirement: |
     Пользователь может создать игру и пригласить в нее друга
   prerequisites:
-    Открыта главная страница Codebattle. 
+    Открыта главная страница Codebattle.
+    В игре онлайн находится друг, например TestUser
   test-data: |
     no data
   steps:
@@ -149,5 +150,7 @@
     - В поле «Choose opponent» выбираем друга, например TestUser
     - В поле «Choose task by name or tags» выбираем игру, например «baudot_code»
     - Нажимаем кнопку «Create invite»
+    - Пользователю отправлено TestUser приглашение в игру
+    - Пользователь TestUser видит приглашение в игру и принимает его
   expected-result: |
     Запущена созданная игра
