@@ -112,3 +112,22 @@
     - Нажимаем кнопку «Create» 
   expected-result: |
     Открылось окно созданного турнира.
+
+- summary: |
+    Проверка создания игры с ботом
+  requirement: |
+    Пользователь может создать игру с ботом
+  prerequisites:
+    Открыта главная страница Codebattle. 
+  test-data: |
+    no data
+  steps:
+    - Нажимаем кнопку «Create a game»
+    - Открывается окно «Create a game» с возможностью создания игры
+    - Нажимаем кнопку «Medium» (устанавливаем уровень игры)
+    - Нажимаем кнопку «With a bot» (устанавливаем тип игры)
+    - Переводим ползунок «Time control» на 15 min (устанавливаем время игры)
+    - В поле «Choose task by name or tags» выбираем «bulls_and_cows»
+    - Нажимаем кнопку «Create battle»
+  expected-result: |
+    Открылось окно созданной игры
