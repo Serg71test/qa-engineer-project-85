@@ -81,3 +81,17 @@
     - Нажимаем кнопку «Авторизовать»     
   expected-result: |
     Открыта главная страница Codebattle. Выполнена авторизация.
+
+- summary: |
+    Создание игры без регистрации пользователя
+  requirement: |
+    Без регистрации пользователя возможно создание игры
+  prerequisites:
+    no data
+  test-data: |
+    no data
+  steps:
+    - Открываем ссылку https://codebattle.hexlet.io
+    - Нажимаем кнопку «Try simple battle» 
+  expected-result: |
+    Запущена игра Codebattle
