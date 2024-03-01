@@ -6,10 +6,10 @@
   prerequisites: |
     no data
   test-data: |
-    no data
+    Логин = TestUser Пароль = Qq123456
   steps:
-    - В поле Email вводим Логин (Email) существующего пользователя
-    - В поле Password вводим пароль существующего пользователя
+    - В поле Email вводим Логин (Email) 
+    - В поле Password вводим пароль 
     - Нажимаем кнопку «Submit»
   expected-result: |
     Открыта основная (лобби) страница Codebattle
